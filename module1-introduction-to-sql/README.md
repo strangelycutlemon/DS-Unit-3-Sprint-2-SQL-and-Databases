@@ -52,10 +52,20 @@ Use `sqlite3` to load and write queries to explore the data, and answer the
 following questions:
 
 - How many total Characters are there?
+  - 302
 - How many of each specific subclass?
+  - Thief: 51
+  - Mage: 108
+    - Necromancer Mages: 11
+  - cleric: 75
+  - fighter: 68
 - How many total Items?
+  - 174
 - How many of the Items are weapons? How many are not?
+  - 37 weapons
+  - 137 non-weapons
 - How many Items does each character have? (Return first 20 rows)
+  - [3, 3, 2, 4, 4, 1, 5, 3, 4, 4, 3, 3, 4, 4, 4, 1, 5, 5, 3, 1]
 - How many Weapons does each character have? (Return first 20 rows)
 - On average, how many Items does each Character have?
 - On average, how many Weapons does each character have?
