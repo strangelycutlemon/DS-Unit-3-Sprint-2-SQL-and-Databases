@@ -6,14 +6,14 @@ import pandas as pd
 df = pd.read_csv('titanic.csv')
 
 # Set up connection to elephantsql database
-dbname = 'dueuejjh'
-user = 'dueuejjh'
+dbname   = 'dueuejjh'
+user     = 'dueuejjh'
 password = getpass()
-host = 'salt.db.elephantsql.com'
-conn = psycopg2.connect(dbname=dbname,
-                        user = user,
+host     = 'salt.db.elephantsql.com'
+conn = psycopg2.connect(dbname   = dbname,
+                        user     = user,
                         password = password,
-                        host = host)
+                        host     = host)
 r = conn.cursor()
 
 # Get passengers as tuples
