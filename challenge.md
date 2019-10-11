@@ -149,6 +149,7 @@ Using `sqlite3` in `northwind.py`, answer the following:
 - (*Stretch*) Who's the employee with the most territories? Use
   `TerritoryId` (not name, region, or other fields) as the unique identifier for
   territories.
+  - ```[('Nancy', 'Davolio', 49)]```
 
 ### Part 4 - Questions (and your Answers)
 
