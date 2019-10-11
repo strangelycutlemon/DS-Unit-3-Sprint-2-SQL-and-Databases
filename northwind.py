@@ -16,7 +16,15 @@ def avg_age():
     print(c.execute("""select avg(HireDate - BirthDate) from Employee;""").fetchall())
 
 # Stretch goal: do this at the end
-# print(c.execute("""
+# print employee with the most territories
+def employee_who_gets_around():
+    print(c.execute("""select Employee.FirstName, Employee.LastName, count(distinct Territory.Id)
+                       from Employee, EmployeeTerritory, Territory
+                       where Employee.Id=EmployeeTerritory.EmployeeID
+                       and Territory.Id=EmployeeTerritory.TerritoryId
+                       order by count(distinct Territory.Id)
+                       limit 1
+                       """).fetchall())
 
 # print 10 most expensive products and their respective suppliers
 def most_expensive_suppliers():
