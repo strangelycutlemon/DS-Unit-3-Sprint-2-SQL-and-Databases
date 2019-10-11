@@ -119,6 +119,7 @@ Answer the following questions (each is from a single table):
   lot of arithmetic works with dates.)
   - ```[(37.22222222222222,)]```
 - (*Stretch*) How does the average age of employee at hire vary by city?
+  - ```[('Kirkland', 29.0), ('London', 32.5), ('Redmond', 56.0), ('Seattle', 40.0), ('Tacoma', 40.0)]```
 
 Your code (to load and query the data) should be saved in `northwind.py`, and
 added to the repository. Do your best to answer in purely SQL, but if necessary
