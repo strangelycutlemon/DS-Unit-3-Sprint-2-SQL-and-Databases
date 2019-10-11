@@ -157,22 +157,22 @@ interview screening questions (a form you fill when applying for a job):
 
 - In the Northwind database, what is the type of relationship between the
   `Employee` and `Territory` tables?
-  - This is a many-to-many relationship. The EmployeeTerritory table is an
+  ```This is a many-to-many relationship. The EmployeeTerritory table is an
     intermediary table (aka a junction table), which is used to link the other two.
     We can easily identify such tables because they reference the primary keys of
     both tables they are joining. In this particular case, just by looking at the
     tables, we can see that an employee of this company can be assigned to multiple
-    territories.
+    territories.```
 - What is a situation where a document store (like MongoDB) is appropriate, and
   what is a situation where it is not appropriate?
-  - MongoDB would be a good choice of database for items with an indeterminate
+  ```MongoDB would be a good choice of database for items with an indeterminate
   number of fields. For example, if a chemistry lab wanted to store information
   about experiments with many different parameters, MongoDB would be a good choice.
   It allows you to immediately start storing documents without specifying a schema.
   However, this kind of non-relational database would not be appropriate for something like an EMR (Electronic Medical Record) System, where availability is crucial.
   MongoDB is a CP system, providing no availability guarantee.
-- What is "NewSQL", and what is it trying to achieve?
-  - NewSQL is a class of database management systems that attempt to provide a relational data model together with the horizontal scalability seen in NoSQL systems. There are multiple approaches in this category, some with special architectures, others with sharding or storage engines. NewSQL is in demand because modern data-driven companies face enormous costs from planned downtime, but still require systems that can handle thousands of queries at a time, some of which are not pre-defined. These tend to be OLTP databases that prioritize availability, concurrency, and performance.
+- What is "NewSQL", and what is it trying to achieve?```
+  ```NewSQL is a class of database management systems that attempt to provide a relational data model together with the horizontal scalability seen in NoSQL systems. There are multiple approaches in this category, some with special architectures, others with sharding or storage engines. NewSQL is in demand because modern data-driven companies face enormous costs from planned downtime, but still require systems that can handle thousands of queries at a time, some of which are not pre-defined. These tend to be OLTP databases that prioritize availability, concurrency, and performance.```
 
 ### Part 5 - Turn it in!
 Add all the files you wrote (`demo_data.py`, `northwind.py`), as well as this
