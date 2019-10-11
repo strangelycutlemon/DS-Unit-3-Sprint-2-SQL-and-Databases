@@ -20,8 +20,8 @@ def insert_demo():
         (s, x, y)
         VALUES ('g', 3, 9), ('v', 5, 7), ('f', 8, 7);
         """
+    r.execute(insert_data)
 # save the changes
-r.execute(insert_data)
 r.close()
 conn.commit()
 
